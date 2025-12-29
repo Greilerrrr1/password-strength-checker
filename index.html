@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Strength Checker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔐 Password Strength Checker</h1>
+
+        <div class="input-group">
+            <input type="password" id="passwordInput" class="password-input" placeholder="Enter your password"
+                autocomplete="off" />
+            <span class="toggle-password" id="togglePassword">👁️</span>
+        </div>
+
+        <div class="strength-meter">
+            <div class="strength-bar-container">
+                <div class="strength-bar" id="strengthBar"></div>
+            </div>
+            <div class="strength-text" id="strengthText">Enter a password</div>
+        </div>
+
+        <div class="requirements">
+            <h3>Password Requirements:</h3>
+
+            <div class="requirement" id="lengthReq">
+                <div class="requirement-icon"></div>
+                <span>At least 15 characters</span>
+            </div>
+
+            <div class="requirement" id="uppercaseReq">
+                <div class="requirement-icon"></div>
+                <span>Contains uppercase letter</span>
+            </div>
+
+            <div class="requirement" id="lowercaseReq">
+                <div class="requirement-icon"></div>
+                <span>Contains lowercase letter</span>
+            </div>
+
+            <div class="requirement" id="numberReq">
+                <div class="requirement-icon"></div>
+                <span>Contains number</span>
+            </div>
+
+            <div class="requirement" id="symbolReq">
+                <div class="requirement-icon"></div>
+                <span>Contains special character (!@#$%^&*)</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
